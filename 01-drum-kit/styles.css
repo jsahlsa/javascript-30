@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --opacity: 0.9;
+    --blue: rgba(54,151,254,var(--opacity));
+    --light-purple: rgba(207, 103, 240, var(--opacity));
+    --dark-purple: rgba(128,121,253, var(--opacity));
+    --teal: rgba(60,218,255,var(--opacity));
+    --pink: rgba(255,116,111,var(--opacity));
+    --yellow: rgba(206,216,104,var(--opacity));
+}
+
+html {
+    font-size: 10px;
+    background: top left / cover no-repeat url('bg.jpg');
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.keys {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: 110px 110px 110px;
+    grid-gap: 5px;
+}
+
+.key {
+    border: black solid 4px;
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    justify-items: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.07s;
+}
+
+.key:nth-child(1) {
+    background: var(--blue);
+}
+
+.key:nth-child(2) {
+    background: var(--light-purple);
+}
+
+.key:nth-child(3) {
+    background: var(--dark-purple);
+}
+
+.key:nth-child(4) {
+    background: var(--teal);
+}
+
+.key:nth-child(5) {
+    background: var(--pink);
+}
+
+.key:nth-child(6) {
+    background: var(--yellow);
+}
+
+.key:nth-child(7) {
+    background: var(--light-purple);
+}
+
+.key:nth-child(8) {
+    background: var(--dark-purple);
+}
+
+.key:nth-child(9) {
+    background: var(--teal);
+}
+
+.playing {
+    transform: scale(1.1);
+    border: solid 2px #d56df8;
+    box-shadow: 0 0 5px #d56df8;
+}
+
+kbd {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: #333 1px 1px;
+}
+
+span {
+    color: #333;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-family: 'VT323';
+}
+
