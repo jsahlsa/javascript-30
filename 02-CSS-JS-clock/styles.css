@@ -1,13 +1,8 @@
 html {
-    background: rgba(38, 78, 205, 0.8);
+    background: linear-gradient(rgba(0, 200, 255, 0.8), rgba(0, 200, 255, 0.8)), url(monika-grabkowska-yCLBMN5N-jk-unsplash.jpg);
     background-size: cover;
     text-align: center;
     font-size: 10px;
-}
-
-html::after {
-    background: rgba(38, 78, 205, 0.8);
-    background-size: cover;
 }
 
 body {
