@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur)); 
+    max-width: 80%;
+    width: 80%;
+}
+
+.h1 {
+    color: var(--base);
+}
+
+/* base styles */
+
+body {
+    text-align: center;
+    background: hsl(200 53% 43% / 0.4);
+    font-family: 'Ranchers';
+    font-size: 30px;
+    
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100px;
+}
