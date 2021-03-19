@@ -79,4 +79,13 @@ const transport = data.reduce((acc, item) => {
 
 console.log(transport);
 
+const ul = document.createElement('ul');
+
+transport.map(item => {
+    const li = document.createElement('li');
+    return ul.appendChild(li, item);
+})
+
+
+
 
