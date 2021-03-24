@@ -27,7 +27,7 @@ function draw(e) {
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
     [lastX, lastY] = [e.offsetX, e.offsetY];
-    hue++;
+    hue += 20;
 
     if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
         direction = !direction;
