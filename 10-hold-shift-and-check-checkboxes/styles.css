@@ -1,6 +1,6 @@
 html {
       font-family: sans-serif;
-      background: #ffc600;
+      background: hsla(223 50% 25% / 0.6);
     }
 
 .inbox {
@@ -26,9 +26,43 @@ input:checked + p {
       text-decoration: line-through;
     }
 
+    
+
 input[type="checkbox"] {
+    appearance: none;
+    position: relative;
       margin: 20px;
+      background: white;
+      border: black 2px solid;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;  
+      
     }
+
+    input[type="checkbox"]::before {
+        content: " ";
+        background: red;
+        width: 10px;
+        border-radius: 5px;
+        height: 10px;
+        font-size: 1.6em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(3px, 3px) scale(0);
+        transform-origin: center;
+        visibility: hidden;
+        transition: all .2s ease-in;
+    }
+
+    input[type="checkbox"]:checked::before {
+        visibility: visible;
+        transform: translate(3px, 3px) scale(1);
+        transition: all 0.2s cubic-bezier(0.25, 0.25, 0.56, 2);
+    }
+
+
 
 p {
       margin: 0;
