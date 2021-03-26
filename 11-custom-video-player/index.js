@@ -6,9 +6,16 @@ const progress = player.querySelector('.progress');
 const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
 const fullscreen = player.querySelector('.fullscreen');
+const rate = player.querySelector('.rate');
+const volume = player.querySelector('.volume');
 
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
+const rangesArray = [...player.querySelectorAll('.player__slider')];
+console.log(rangesArray);
+
+
+
 
 // build functions
 function togglePlay() {
@@ -30,7 +37,9 @@ function skip() {
 
 function handleRangeUpdate() {
     video[this.name] = this.value;
-    //console.log(this.value);
+    rate.textContent = `${rangesArray[1].value}x`;
+    volume.textContent = rangesArray[0].value;
+    console.log(this.value);
 }
 
 function handleProgress() {
