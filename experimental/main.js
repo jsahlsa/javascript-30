@@ -6,5 +6,9 @@ function playSound() {
 }
 
 const btn = document.querySelector('button');
+const unicornBtn = document.querySelector('.unicorns');
 
 btn.addEventListener('click', playSound);
+unicornBtn.addEventListener('click', () => {
+    cornify_add();
+});
