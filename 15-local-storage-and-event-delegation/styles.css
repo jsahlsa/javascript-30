@@ -84,4 +84,6 @@ h2 {
 input[type=button] + label:before {
     content: "X";
     color: crimson;
+    font-weight: 900;
+    margin: 0;
 }
