@@ -20,7 +20,7 @@ const shadow = function (e) {
 
     const xWalk = (x / width * walk) - (walk / 2);
     const yWalk = (y / height * walk) - (walk / 2);
-    text.style.textShadow = `${xWalk}px ${yWalk}px 10px rgba(0,0,0,0.17)`;
+    text.style.textShadow = `${xWalk}px ${yWalk}px 5px rgba(0,0,0,0.17)`;
     console.log(xWalk, yWalk);
 }
 
